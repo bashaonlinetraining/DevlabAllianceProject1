@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.skysanner.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 104.528 sec <<< FAILURE! - in com.skysanner.runners.TestRunner
+Search a flight and select a specific flight filter #4(Validate all flighbooking feature)  Time elapsed: 44.27 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[@title='Indigo']/ancestor::label (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-CU29AV1', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58018/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a574f39262f8beaf99200e8905b17e4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.skyscanner.pages.FlightsResultsPage.selectFlightName(FlightsResultsPage.java:27)
+	at com.skyscanner.stepDefinitions.Bookflight.user_should_see_the_flight_result_page_and_select_flight_filter(Bookflight.java:52)
+	at ✽.user should see the flight result page and select flight filter "Indigo"(file:///D:/WorkSpace/CUCUMBERSKYSCANNER/Features/Bookflight.feature:46)
+
+Search a flight and select a specific flight filter #5(Validate all flighbooking feature)  Time elapsed: 30.098 sec  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label class="makeFlex spaceBetween appendBottom12 pointer ">...</label> is not clickable at point (187, 349). Other element would receive the click: <p class="overlayBg"></p>
+  (Session info: chrome=108.0.5359.126)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-CU29AV1', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a9d45d690fa0c0314240f65cf525e137, clickElement {id=136fe275-d097-4c4d-a940-ba66b2ea9167}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58192/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a9d45d690fa0c0314240f65cf525e137)] -> xpath: //span[@title='Vistara']/ancestor::label]
+Session ID: a9d45d690fa0c0314240f65cf525e137
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.skyscanner.seleniumutilities.SeleniumWebElements.clikOnElement(SeleniumWebElements.java:66)
+	at com.skyscanner.pages.FlightsResultsPage.selectFlightName(FlightsResultsPage.java:29)
+	at com.skyscanner.stepDefinitions.Bookflight.user_should_see_the_flight_result_page_and_select_flight_filter(Bookflight.java:52)
+	at ✽.user should see the flight result page and select flight filter "Vistara"(file:///D:/WorkSpace/CUCUMBERSKYSCANNER/Features/Bookflight.feature:46)
+

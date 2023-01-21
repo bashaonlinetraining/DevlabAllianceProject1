@@ -1,0 +1,14 @@
+com\skyscanner\pages\FlightsResultsPage.class
+com\skyscanner\pages\HeaderPage.class
+com\skyscanner\seleniumutilities\SeleniumDriverActions.class
+com\skyscanner\pages\HomePage.class
+com\skyscanner\seleniumutilities\SeleniumWebElements.class
+com\skyscanner\dataDrivers\WriteIntoExcelFile.class
+com\skyscanner\dataDrivers\readDataFromXlsFile.class
+com\skyscanner\pages\LoginPage.class
+com\skysanner\runners\TestRunner.class
+com\skyscanner\pages\HotelResultsPage.class
+com\skyscanner\stepDefinitions\Bookflight.class
+com\skyscanner\dataDrivers\readPropertiesfile.class
+com\skyscanner\stepDefinitions\BaseTest.class
+com\skyscanner\dataDrivers\readDataFromXlsxFile.class
